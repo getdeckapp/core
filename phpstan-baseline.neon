@@ -1,0 +1,277 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\BlockedJobExecutionRecorder\:\:recordNowUnchecked\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/BlockedJobExecutionRecorder.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\BlockedJobExecutionRecorder\:\:runSilently\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/BlockedJobExecutionRecorder.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\BlockedJobExecutionRecorder\:\:runSilentlyVoid\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/BlockedJobExecutionRecorder.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\InterceptBlockedQueueJob\:\:removeFromQueue\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/InterceptBlockedQueueJob.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\InterceptBlockedQueueJob\:\:runSilently\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 2
+			path: src/Blocking/InterceptBlockedQueueJob.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassBlock\:\:cache\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 9
+			path: src/Blocking/JobClassBlock.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassBlock\:\:interpretBlockValue\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/JobClassBlock.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassBlock\:\:isAnyBlockedUnchecked\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/JobClassBlock.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassBlock\:\:normalizeReason\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/JobClassBlock.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassBlock\:\:putAudit\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/JobClassBlock.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassBlock\:\:putBlock\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/JobClassBlock.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassBlock\:\:resolveBlockedBy\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/JobClassBlock.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassBlock\:\:runSilently\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 2
+			path: src/Blocking/JobClassBlock.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassBlock\:\:runSilentlyVoid\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 2
+			path: src/Blocking/JobClassBlock.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassIdentifierRegistry\:\:cache\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 3
+			path: src/Blocking/JobClassIdentifierRegistry.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassIdentifierRegistry\:\:linkCacheKey\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 3
+			path: src/Blocking/JobClassIdentifierRegistry.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Blocking\\JobClassIdentifierRegistry\:\:linkedIdentifiers\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Blocking/JobClassIdentifierRegistry.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\JobCancellation\:\:anyCancelledUnchecked\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Cancellation/JobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\JobCancellation\:\:cache\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 5
+			path: src/Cancellation/JobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\JobCancellation\:\:consumeIfCancelledUnchecked\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Cancellation/JobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\JobCancellation\:\:prefixedCacheKey\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Cancellation/JobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\JobCancellation\:\:redisConnection\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 2
+			path: src/Cancellation/JobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\JobCancellation\:\:runSilently\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 4
+			path: src/Cancellation/JobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\JobCancellation\:\:runSilentlyVoid\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 2
+			path: src/Cancellation/JobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\PendingJobCancellation\:\:discoverQueueNames\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Cancellation/PendingJobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\PendingJobCancellation\:\:payloadMatchesUuid\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 3
+			path: src/Cancellation/PendingJobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\PendingJobCancellation\:\:queueRedisKey\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Cancellation/PendingJobCancellation.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Cancellation\\PendingJobCancellation\:\:removeFromRedisQueue\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 2
+			path: src/Cancellation/PendingJobCancellation.php
+
+		-
+			message: '#^Instanceof between Illuminate\\Http\\Request and Illuminate\\Http\\Request will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: src/Dispatch/DispatchGroup.php
+
+		-
+			message: '#^Instanceof between Illuminate\\Http\\Request and Illuminate\\Http\\Request will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: src/Dispatch/DispatchOrigin.php
+
+		-
+			message: '#^Negated boolean expression is always true\.$#'
+			identifier: booleanNot.alwaysTrue
+			count: 1
+			path: src/Queue/DeckCallQueuedHandler.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Recording\\JobExecutionTiming\:\:runSilently\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Recording/JobExecutionTiming.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Recording\\JobProgress\:\:cache\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 3
+			path: src/Recording/JobProgress.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Recording\\JobProgress\:\:runSilently\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 2
+			path: src/Recording/JobProgress.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Recording\\JobProgress\:\:runSilentlyVoid\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 2
+			path: src/Recording/JobProgress.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between mixed and null will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 2
+			path: src/Recording/QueuedJobMetadata.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Recording\\QueuedJobMetadata\:\:tagsFromCommand\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Recording/QueuedJobMetadata.php
+
+		-
+			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: src/Recording/QueuedJobResolver.php
+
+		-
+			message: '#^Call to function method_exists\(\) with ''Illuminate\\\\Queue\\\\Jobs\\\\JobName'' and ''resolve'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Recording/QueuedJobResolver.php
+
+		-
+			message: '#^Call to function method_exists\(\) with ''Illuminate\\\\Queue\\\\Jobs\\\\JobName'' and ''resolveClassName'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Recording/QueuedJobResolver.php
+
+		-
+			message: '#^Call to function method_exists\(\) with Illuminate\\Contracts\\Queue\\Job and ''resolveName'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Recording/QueuedJobResolver.php
+
+		-
+			message: '#^Call to function method_exists\(\) with Illuminate\\Contracts\\Queue\\Job and ''resolveQueuedJobCla…'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Recording/QueuedJobResolver.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Recording\\QueuedJobResolver\:\:jobName\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 2
+			path: src/Recording/QueuedJobResolver.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Recording\\QueuedJobResolver\:\:tryResolveDisplayName\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Recording/QueuedJobResolver.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Recording\\QueuedJobResolver\:\:tryResolveQueuedJobClass\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Recording/QueuedJobResolver.php
+
+		-
+			message: '#^Unsafe call to private method Deck\\Core\\Support\\DeckResilience\:\:logFailure\(\) through static\:\:\.$#'
+			identifier: staticClassAccess.privateMethod
+			count: 1
+			path: src/Support/DeckResilience.php

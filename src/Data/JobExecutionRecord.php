@@ -1,0 +1,30 @@
+<?php
+
+namespace Deck\Core\Data;
+
+use Deck\Core\Enums\JobExecutionStatus;
+use Deck\Core\Recording\QueuedJobMetadata;
+use Illuminate\Support\Carbon;
+
+readonly class JobExecutionRecord
+{
+    /**
+     * @param  list<string>|null  $tags
+     */
+    public function __construct(
+        public QueuedJobMetadata $metadata,
+        public string $project,
+        public string $environment,
+        public JobExecutionStatus $status,
+        public Carbon $startedAt,
+        public ?Carbon $finishedAt = null,
+        public ?int $durationMs = null,
+        public ?int $waitMs = null,
+        public ?string $exceptionClass = null,
+        public ?string $exceptionMessage = null,
+        public ?string $exceptionTrace = null,
+        public ?array $tags = null,
+        public ?array $context = null,
+        public ?ObservabilitySnapshot $observability = null,
+    ) {}
+}
