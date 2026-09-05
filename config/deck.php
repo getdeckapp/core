@@ -37,6 +37,13 @@ return [
 
     'block_reason_max_length' => (int) env('DECK_BLOCK_REASON_MAX_LENGTH', 500),
 
+    // Queue pause flags (connection:queue). Falls back to the block/cancel
+    // store so all control flags live together. A pause is held until resumed
+    // or until this TTL elapses (a year by default) — it never expires quietly
+    // mid-incident.
+    'pause_cache_store' => env('DECK_PAUSE_CACHE_STORE'),
+    'pause_ttl_seconds' => (int) env('DECK_PAUSE_TTL_SECONDS', 31_536_000),
+
     'defer_side_effects' => (bool) env('DECK_DEFER_SIDE_EFFECTS', true),
 
     'store_context' => (bool) env('DECK_STORE_CONTEXT', false),
