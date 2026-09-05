@@ -9,6 +9,7 @@ use Deck\Core\Events\JobExecutionRecorded;
 use Deck\Core\Horizon\HorizonSnapshot;
 use Deck\Core\Http\Middleware\AssignDispatchGroup;
 use Deck\Core\Listeners\RecordJobExecution;
+use Deck\Core\Pausing\PauseWorkerLoop;
 use Deck\Core\Queue\DeckCallQueuedHandler;
 use Deck\Core\Recorders\DispatchingJobExecutionRecorder;
 use Illuminate\Bus\Dispatcher as BusDispatcher;
@@ -114,6 +115,7 @@ class DeckCoreServiceProvider extends ServiceProvider
         Queue::before([$recorder, 'handleJobProcessing']);
         Queue::after([$recorder, 'handleProcessed']);
         Queue::failing([$recorder, 'handleFailed']);
+        Queue::looping([PauseWorkerLoop::class, 'handle']);
 
         Event::listen(JobAttempted::class, [$recorder, 'handleJobAttempted']);
     }

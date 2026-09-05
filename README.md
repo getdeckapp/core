@@ -20,7 +20,8 @@ self-hosted app) or `deck/cloud` (slim agent), both of which require it.
 - The recorder → `JobExecutionRecorded` event seam and the `JobExecutionRecorder`
   contract.
 - Cache-based control primitives: cooperative cancellation, pending-job
-  cancellation, and job-class blocking.
+  cancellation, job-class blocking, and queue pausing (workers serving a
+  paused `connection:queue` idle until it is resumed).
 - The storage-free retry primitive (`JobExecutionRetry` + `JobExecutionRetryContext`).
 - Shared data objects (`JobExecutionRecord`, `ObservabilitySnapshot`, …) and
   Horizon read helpers.
